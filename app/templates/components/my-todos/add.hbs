@@ -1,0 +1,6 @@
+<div class="action">
+  {{input type="text" class="input" placeholder="place input item name to add" value=text}}
+  {{#if text}}
+    <button class="btn" {{action (pipe (action "add" text) (action "clearText"))}}>Add</button>
+  {{/if}}
+</div>

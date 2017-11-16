@@ -1,0 +1,5 @@
+<span class="name {{if data.isDone 'is-done' ''}}">{{data.name}}</span>
+<label class="done">
+  <input type="checkbox" onchange={{action "done" data.id}}/>Done
+</label>
+<button class="btn" {{action "del" data.id}}>delete</button>

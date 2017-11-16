@@ -1,0 +1,120 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+}
+.ui-header {
+  text-align: center;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  transition: background-color 0.2s linear;
+  background-image: linear-gradient(180deg, #e8eaee, #e8eaee, transparent 50%), linear-gradient(270deg, #e8eaee, #e8eaee 50%, transparent 50%), linear-gradient(0deg, #e8eaee, #e8eaee 50%, transparent 50%), linear-gradient(90deg, #e8eaee, #e8eaee 50%, transparent 50%);
+  background-size: 100% 0, 0 100%, 100% 1px, 0 100%;
+  background-repeat: no-repeat;
+  background-position: top, right top, bottom, left top;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.ui-header h1,
+.ui-footer h1 {
+  margin: 0;
+  padding: 0;
+  height: 44px;
+  line-height: 44px;
+  font-size: 22px;
+  color: #333;
+  font-weight: normal;
+}
+
+.ui-body {
+  padding-top: 44px;
+}
+
+.ui-footer {
+  text-align: center;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  transition: background-color 0.2s linear;
+  background-image: linear-gradient(180deg, #e8eaee, #e8eaee, transparent 50%), linear-gradient(270deg, #e8eaee, #e8eaee 50%, transparent 50%), linear-gradient(0deg, #e8eaee, #e8eaee 50%, transparent 50%), linear-gradient(90deg, #e8eaee, #e8eaee 50%, transparent 50%);
+  background-size: 100% 0, 0 100%, 100% 1px, 0 100%;
+  background-repeat: no-repeat;
+  background-position: top, right top, bottom, left top;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.action {
+  padding: 15px 10px;
+  display: flex;
+}
+
+.input {
+  outline: none;
+  border: 1px solid #333;
+  font-size: 14px;
+  padding: 5px;
+  flex-grow: 2;
+}
+
+.btn {
+  background: #1f8ceb;
+  border: 1px solid #1f8ceb;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #fff;
+  outline: none;
+  margin-left: 20px;
+  border-radius: 3px;
+  flex-grow: 1;
+}
+
+.btn:active {
+  background: #1271c4;
+}
+
+.item {
+  margin-bottom: 5px;
+}
+
+.item .name {
+  display: inline-block;
+  width: 140px;
+}
+
+.item .btn {
+  margin-left: 5px;
+  background: #c72828;
+  border-color: #c72828;
+  padding: 5px;
+}
+
+.is-done {
+  text-decoration: line-through;
+}
+
+.item-hidden {
+  display: none;
+}
+
+.filter {
+  text-align: center;
+  background: #fff;
+}
+
+.filter .input {
+  border-color: green;
+  width: 200px;
+}
