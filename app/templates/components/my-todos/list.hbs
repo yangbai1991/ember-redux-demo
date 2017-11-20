@@ -1,6 +1,10 @@
-{{#if noItems}}
-...
+{{#if loading}}
+  <div class="loading"><img src="/assets/images/loader@2x.gif" alt=""></div>
+{{else}}
+  {{#if noItems}}
+  No Results...
+  {{/if}}
+  {{#each items as |item|}}
+    {{my-todos/item data=item}}
+  {{/each}}
 {{/if}}
-{{#each items as |item|}}
-  {{my-todos/item data=item}}
-{{/each}}

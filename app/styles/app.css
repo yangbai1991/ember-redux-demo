@@ -1,4 +1,4 @@
-html, body {
+html, body, ul, li {
   margin: 0;
   padding: 0;
   background: #f8f8f8;
@@ -112,9 +112,25 @@ html, body {
 .filter {
   text-align: center;
   background: #fff;
+  padding: 5px;
 }
 
 .filter .input {
   border-color: green;
   width: 200px;
 }
+
+.loading {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.loading img {
+  width: 16px;
+}
+
+.todo-list {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
